@@ -7,6 +7,7 @@ const express = require('express');
 const app = express();
 const PORT = 3001;
 const { notes } = require('./db/db.json');
+const uniqid = require('uniqid');
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -33,7 +34,7 @@ function validateNewNote(newNote) {
   if (!newNote.text || typeof newNote.text !== 'string') {
     return false;
   }
-  if (!newNote.id || typeof animal.id !== 'number') {
+  if (!newNote.id || typeof newNote.id !== 'string') {
     return false;
   }
   return true;
@@ -58,10 +59,10 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
   // set id based on what the next index of the array will be
-  req.body.id = notes.length.toString();
+  req.body.id = uniqid();
   // validate the new note data before pushing newNote
   if (!validateNewNote(req.body)) {
-    res.status(400).send("This note is not properly fromatted.");
+    res.status(400).send("This note is not properly formatted.");
   } else {
   // add new note to db.json file
   const newNote = createNewNote(req.body, notes);
