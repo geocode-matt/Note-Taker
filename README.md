@@ -12,6 +12,7 @@
 
     Home Page:
     <img src="./public/assets/images/screenshot1.png">
+    
     Note-Taking Panel:
     <img src="./public/assets/images/screenshot2.png">
 
@@ -21,8 +22,7 @@
   ## Usage
     If you prefer to run the application on your own machine, download the application (above) and initialize by using the 'npm start' command in the command line. Either deploy through Heroku and type 'heroku open' in command line, or visit 'localhost:3001' in your favorite browser to view the application.
   
-    If you would rather just use the application remotely visit one of these links:
-        GitHub: https://geocode-matt.github.io/Note-Taker/
+    If you would rather just use the application remotely visit the deployed application on Heroku:
         Heroku: https://rocky-atoll-09114.herokuapp.com/
         
   ## Contribution Guidelines
