@@ -17,7 +17,6 @@ app.use(express.json());
 // ===========================================================
 // FUNCTIONS
 // ===========================================================
-
 // This function creates a new note from the post route and pushes the data into the db.json file
 function createNewNote(body, notes) {
   const newNote = body;
@@ -29,6 +28,7 @@ function createNewNote(body, notes) {
   return newNote;
 }
 
+// This function validates the note inputs before allowing it to be added
 function validateNewNote(newNote) {
   if (!newNote.title || typeof newNote.title !== 'string') {
     return false;
@@ -42,6 +42,19 @@ function validateNewNote(newNote) {
   return true;
 }
 
+// This function removes the targeted (delete button) item from db.json and re-writes the file
+function removeFromDb(id) {
+  for (i = 0; i < notes.length; i++) {
+    if (id === notes[i].id) {
+      notes.splice(i, 1);
+      fs.writeFileSync(
+        path.join(__dirname, './db/db.json'),
+        JSON.stringify({ notes: notes }, null, 2)
+      )
+    }
+    console.log(notes);
+  }
+}
 
 // ===========================================================
 // ROUTES
@@ -56,7 +69,7 @@ app.get('/notes', (req, res) => {
 
 app.get('/api/notes', (req, res) => {
     res.json(notes);
-    console.log(notes);
+    // console.log(notes);
 });
 
 app.post('/api/notes', (req, res) => {
@@ -72,14 +85,12 @@ app.post('/api/notes', (req, res) => {
   }
 });
 
-
-
-
-
-
-
-
-
+app.delete('/api/notes/:id', function (req, res) {
+  res.send('Deleted Note');
+  const idSplit = req.url.split(":")
+  const id = idSplit[1];
+  removeFromDb(id);
+})
 
 // ===========================================================
 // LISTENER
