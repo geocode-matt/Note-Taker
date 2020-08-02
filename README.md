@@ -9,11 +9,7 @@
   
   ## Description
     This application stores your favorite and most important notes!
-
-    Home Page:
     <img src="./screenshot1.png">
-
-    Note-Taking Panel:
     <img src="./screenshot2.png">
 
   ## Installation Instructions
