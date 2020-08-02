@@ -9,6 +9,7 @@
   ## Description
   This application stores your favorite and most important notes!
     <img src="./public/assets/images/screenshot1.png">
+    <img src="./public/assets/images/screenshot2.png">
 
   ## Installation Instructions
   Download the application from the GitHub repository here: https://github.com/geocode-matt/Note-Taker.
