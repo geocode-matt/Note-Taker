@@ -24,7 +24,7 @@
   
     If you would rather just use the application remotely visit the deployed application on Heroku:
         Heroku: https://rocky-atoll-09114.herokuapp.com/
-        
+       
   ## Contribution Guidelines
     Please email the project owner (mlindenx@email.com) for contribution information. 
 
