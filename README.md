@@ -8,25 +8,25 @@
   * [Questions](#questions)
   
   ## Description
-        This application stores your favorite and most important notes!
+    This application stores your favorite and most important notes!
 
-        Home Page:
+    Home Page:
     <img src="./public/assets/images/screenshot1.png">
-        Note-Taking Panel:
+    Note-Taking Panel:
     <img src="./public/assets/images/screenshot2.png">
 
   ## Installation Instructions
-        Download the application from the GitHub repository here: https://github.com/geocode-matt/Note-Taker.
+    Download the application from the GitHub repository here: https://github.com/geocode-matt/Note-Taker.
 
   ## Usage
-        If you prefer to run the application on your own machine, download the application (above) and initialize by using the 'npm start' command in the command line. Either deploy through Heroku and type 'heroku open' in command line, or visit 'localhost:3001' in your favorite browser to view the application.
+    If you prefer to run the application on your own machine, download the application (above) and initialize by using the 'npm start' command in the command line. Either deploy through Heroku and type 'heroku open' in command line, or visit 'localhost:3001' in your favorite browser to view the application.
   
-        If you would rather just use the application remotely visit one of these links:
+    If you would rather just use the application remotely visit one of these links:
         GitHub: https://geocode-matt.github.io/Note-Taker/
         Heroku: https://rocky-atoll-09114.herokuapp.com/
         
   ## Contribution Guidelines
-        Please email the project owner (mlindenx@email.com) for contribution information. 
+    Please email the project owner (mlindenx@email.com) for contribution information. 
 
   ## Questions
-        Please send any questions/concerns/comments to: mlindenx@gmail.com
+    Please send any questions/concerns/comments to: mlindenx@gmail.com
