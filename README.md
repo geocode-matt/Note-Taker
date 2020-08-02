@@ -1,28 +1,33 @@
-# Note Taker
+# Team-Profile-Generator
 
   ## Table of Contents
   * [Description](#description)
   * [Installation Instructions](#installation-instructions)
   * [Usage](#usage)
+  * [Licensing](#licensing)
   * [Contribution Guidelines](#contribution-guidelines)
-  * [Questions](#questions)
+  * [Tests](#tests)
   
   ## Description
-    This application stores your favorite and most important notes!
-    <img src="./screenshot1.png">
-    <img src="./screenshot2.png">
+  This application will take user input from the command line to build a quick and effective team profile web page.
+    <img src="./public/assets/images/screenshot1.png">
 
   ## Installation Instructions
-    Download the application from the GitHub repository here: https://github.com/geocode-matt/Note-Taker.
+  Download the application from the GitHub repository here: https://github.com/geocode-matt/Team-Profile-Generator.
 
   ## Usage
-    If you prefer to run the application on your own machine, download the application (above) and initialize by using the 'npm start' command in the command line. Either deploy through Heroku and type 'heroku open' in command line, or visit 'localhost:3001' in your favorite browser to view the application.
+  Initialize the application by typing 'node index' in the command line. Answer the prompted questions to fill out your team profile. Upon completion of the prompts, the application will build an index.html file in the /dist directory.
+
+  Tutorial/Walkthrough Video: https://drive.google.com/file/d/1pkzlIkj5BteXCZTi_WLqc4plBoq6xK1h/view
   
-    If you would rather just use the application remotely visit the deployed application on Heroku:
-        Heroku: https://rocky-atoll-09114.herokuapp.com/
-       
+  ## Licensing
+  This project is unlicensed.
+
   ## Contribution Guidelines
-    Please email the project owner (mlindenx@email.com) for contribution information. 
+  Please email the project owner (mlindenx@email.com) for contribution information. 
+
+  ## Tests  
+  Please run 'npm run test' in the command line to view tests.
 
   ## Questions
-    Please send any questions/concerns/comments to: mlindenx@gmail.com
+  Please send any questions/concerns/comments to: mlindenx@gmail.com
